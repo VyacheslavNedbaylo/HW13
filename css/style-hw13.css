@@ -1,0 +1,226 @@
+@import url(reset.css);
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Medium.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.wrapper{
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 12px;
+text-decoration: #FFFFFF;
+max-width: 1240px;
+height: 100vh;
+background-image: url(../img/david-marcu.png);
+background-repeat: no-repeat;
+margin: 0 auto;
+
+}
+.container{
+  overflow: hidden;
+  height: 760px;
+  width:496px;
+  margin-left: auto;
+  position: relative;
+  backdrop-filter:blur (5px) ;
+  background-color:rgba(233, 233, 233, 0.25)
+  
+} 
+.cont2{
+  position: absolute;
+  width:340px;
+  height:529px;
+  border: 2px solid red;
+  margin: 60px 78px 171px 78px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.card_switch{
+border: 1px solid rgba(21, 52, 22, 1);
+border-radius:30px;
+height:36px;
+margin-bottom: 75px;
+}
+.card_switch input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.card_switch input+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 36px;
+  width:340px;
+  border-radius:30px;
+  cursor: pointer;
+  position: relative;
+  transition: all .3s linear;
+ }
+.card_switch input + label::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 32px; 
+  width: 168px;
+  border-radius:30px;
+  transition:all .3s linear;
+  background: rgba(21, 52, 22, 1)
+   }
+ .card_switch input:checked + label::before{
+  left: calc(100%-2px);
+  transform: translateX(98%);
+ }
+.card_switch span{
+color: rgba(255, 255, 255, 1);
+position: relative;
+flex: 1 1 50%;
+ }
+ h2{
+  margin-bottom:29px;
+  font-size:30px ;
+  text-align: center;
+  line-height: 36.15px;
+  color: rgba(255, 255, 255, 1)  
+  }
+::placeholder {
+  color:#FFFFFF;
+  opacity: 1;
+ 
+}
+:-ms-input-placeholder {
+  color:#FFFFFF;
+  opacity: 1;
+}
+
+.email, .pass{
+width: 100%;
+height:36px;
+border: none;
+border-radius:30px;
+background-color: #929191;
+padding: 20px;
+cursor: pointer;
+}
+.email{
+margin-bottom:15px;
+}
+.pass{
+   margin-bottom:29px;
+ }
+ .rem-a{
+  display: flex;
+  justify-content: space-between;
+  height: 18px;
+  }
+.custom-checkbox input{
+    position: absolute; 
+    z-index: -1;
+    opacity: 0;
+   }
+ .custom-checkbox{
+  padding: 0px 0px 0px 25px;
+  display: inline-block;
+  cursor: pointer;
+  color:#FFFFFF;
+  justify-content: center;
+  position: relative;
+ }
+  .custom-checkbox label::before{
+  content: '';   
+  position: absolute;
+  top: 0;   
+  left: 0; 
+  width: 15px;
+  height: 15px; 
+  border: 1px solid #fff;
+  border-radius: 2px;
+ }
+ .custom-checkbox input:checked +label::before {
+  background-color: #153416;
+ }
+ .custom-checkbox input:checked +label::after {
+  content: '';   
+  position: absolute;
+  top: 1px;   
+  left: 5px; 
+  width: 5px;
+  height: 9px; 
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform:rotate(36deg); 
+}
+.custom-checkbox input:active +label::before {
+border: 1px solid #153416
+}
+.custom-checkbox input:checked:active +label::before {
+  border: 1px solid #153416
+  }
+
+ .forget,.dont-have,.or{
+  color: #153416; 
+  }
+.btn-1{
+  width: 100%;
+  height:44px;
+  border-radius:30px;
+  background: rgba(21, 52, 22, 1);
+  color: #FFFFFF;
+  margin-top:30px;
+  margin-bottom: 40px;
+}
+.dhr{
+  display: flex;
+  justify-content: center;
+  line-height:14.06px;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.reg{
+  color:#FFFFFF;
+}
+.or{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.hidden{
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.icon{
+   height: 24px;
+  }
+.sn{
+  max-width: 102px;
+  margin: 0 auto;
+ }
+.sn-menu{
+  display:flex;
+  gap: 20px;
+  }
+  .sn a{
+    display: block;
+    width: 14px;
+    height: 24px;          
+  } 
+  
+
+
+
+
+
+
+
+
+
+
+
+
